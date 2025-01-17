@@ -15,7 +15,7 @@ const navbar: React.FC = () => {
                         >
                             <NavLink
                                 className="li"
-                                to="/"
+                                to={menu.path}
                             >
                                 {menu.value}
                             </NavLink>

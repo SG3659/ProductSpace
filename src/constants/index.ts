@@ -1,15 +1,20 @@
  const nav=[
    {
       id:1,
-      value:"Programs"
+      value:"Programs",
+      path:"/event"
    },
    {
       id:2,
-      value:"Resources"
+      value:"Resources",
+      path:"/event"
+
    },
    {
       id:3,
-      value:"Alumni"
+      value:"Alumni",
+      path:"/event"
+
    }
 ]
 

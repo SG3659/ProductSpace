@@ -6,7 +6,9 @@ import Mentor from "./components/Mentor/mentor"
 import Event from "./components/Event/event"
 import PlacementRecord from"./components/Placement-Record/placement"
 import Placement from "./components/Placement/placement"
+import Programs from "./components/Programs/program"
 import './App.css'
+
 
 function App() {
   
@@ -17,10 +19,11 @@ function App() {
          <Inst/> 
          <PlacementRecord/>
          <Placement/>
-         <Mentor/>
-         <Event/>
+         <Programs/>
+         <Mentor/>  
+         <Event/>         
          <Faq/> 
-        <Footer/>   
+         <Footer/>  
     </>
   )
 }

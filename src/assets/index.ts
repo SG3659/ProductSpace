@@ -20,4 +20,9 @@ import upc from "./event/upc-event.png"
 
 
 import Image from"./placed-img.png"
-export  {iitKgp, iitRrk, iimBan, Rohit, Parmit, Shilpi, Kanishk, Arun, magicBrick,Reliance,microsoft, Inmobi,Fedex, last,upc ,Image }
+
+import p1 from "./program/p1.png"
+import p2 from "./program/p2.png"
+
+
+export  {iitKgp, iitRrk, iimBan, Rohit, Parmit, Shilpi, Kanishk, Arun, magicBrick,Reliance,microsoft, Inmobi,Fedex, last,upc ,Image,p1, p2 }
