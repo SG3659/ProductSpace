@@ -1,0 +1,54 @@
+import { NavLink, Link } from "react-router-dom"
+import nav from "../../constants/index"
+import "./navbar.css"
+// import { IoMdMenu } from "react-icons/io";
+
+const navbar = () => {
+  return (
+    
+    <nav className="navbar">
+        <div className="navbar-container">
+                <h1 className="nav-head">Product <span className="head-span">Space</span></h1>
+                <ul className="menu-bar">
+                    {nav.map((menu)=>(
+                        <li key={menu.id}
+                        >
+                            <NavLink
+                                className="li"
+                                to="/"
+                            >
+                                {menu.value}
+                            </NavLink>
+                        </li>
+                    ))}
+                </ul>
+        
+
+            <div className="button">
+                <Link
+                    to="#"
+                    className="login-button button-common  "
+                >
+                    Log In
+                </Link>
+                <Link
+                    to="#"
+                    className="sign-button button-common "           
+                >
+                    Sign Up 
+                </Link>
+            </div>              
+        </div>
+    </nav>
+        
+  )
+}
+
+export default navbar
+
+
+// width: Hug (123.25px)px;
+// height: Hug (36px)px;
+// padding: 12px 15.25px 8px 16px;
+// gap: 0px;
+// opacity: 0px;

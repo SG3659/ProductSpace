@@ -1,0 +1,110 @@
+.navbar{
+  width: 100vw;
+  height: 80px;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  left: 0;
+  z-index: 9;
+  padding: 0 20px;
+  background-color: #FFFFFF;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-container{
+  width: 62.5vw;
+  height: 64px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-container h1{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 19.64px;
+  font-weight: 700;
+  line-height: 23.94px;
+}
+.head-span{
+  color: #21C1F3;
+}
+
+.menu-bar{
+  display: flex;
+  gap: 48px;
+}
+.li{
+  font-weight: 500;
+  font-family: 'Inter', sans-serif;
+  font-size: 20px;
+  line-height: 16px;
+  color: #51515E;
+  text-decoration: none;
+}
+
+
+
+.button {
+  display: flex;
+  gap: 16px;
+  justify-content: right;
+}
+ .button-common {
+   font-weight: 500;
+   border-radius: 62rem;
+   font-size: 0.875rem;
+   width: 155px;
+   height: 48px;
+   padding-left: 24px;
+   padding-right: 24px;
+   margin-right: 0.5rem;
+   text-decoration: none;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+ }
+
+
+.login-button {
+  color: #000000;
+  border: 1px solid var(--color-primary);
+}
+
+.sign-button {
+  color: white;
+  background-color: var(--color-primary);
+} 
+ 
+
+@media (max-width:1200px){
+  .navbar{
+    padding:  8px;  
+  }
+}
+
+
+@media (max-width:890px){
+   .navbar {
+     padding:  8px;  
+     width: 100vw;
+    }
+    .menu-bar{
+      display: none;
+    }
+}
+
+
+@media (max-width:480px){
+   .login-button{
+     display: none;
+   }
+   .nav-head{
+     display: none;
+   }
+   .menu-bar{
+     display: none;
+   }
+  
+} 
