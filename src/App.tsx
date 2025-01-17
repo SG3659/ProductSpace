@@ -4,6 +4,7 @@ import Footer from "./components/Footer/footer"
 import Inst from"./components/TrustedInst/institute"
 import Mentor from "./components/Mentor/mentor"
 import Event from "./components/Event/event"
+import Placement from"./components/Placement/placement"
 import './App.css'
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
     <> 
          <Navbar/>  
          <Inst/> 
+         <Placement/>
          <Mentor/>
          <Event/>
          <Faq/> 

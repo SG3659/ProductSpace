@@ -17,4 +17,7 @@ import Reliance from "./company/reliance.png"
 
 import last from"./event/last-event.png"
 import upc from "./event/upc-event.png"
-export  {iitKgp, iitRrk, iimBan, Rohit, Parmit, Shilpi, Kanishk, Arun, magicBrick,Reliance,microsoft, Inmobi,Fedex, last,upc  }
+
+
+import Image from"./placed-img.png"
+export  {iitKgp, iitRrk, iimBan, Rohit, Parmit, Shilpi, Kanishk, Arun, magicBrick,Reliance,microsoft, Inmobi,Fedex, last,upc ,Image }
