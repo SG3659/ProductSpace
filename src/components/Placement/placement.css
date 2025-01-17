@@ -1,51 +1,3 @@
-/* .placement-container{
-   width: 100%;
-   height: 777px;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-}
-
-.placement-section{
-   width: 1191px;
-   height: 541px;
-   gap: 66px;
-   display: flex;
-   align-items: center;
-}
-.placed-image{
-   width: 541px;
-   height: 541px;
-   display: flex;
-}
-.placed-image img{
-   width: 100%;
-   object-fit: fill;
-}
-.placed-text{
-   width: 584px;
-   height: 192px;
-   gap: 12px;
-   padding: 1px;
-}
-.placed-text h1{
-   font-family: 'Mona Sans', sans-serif;
-   text-align: left;
-   font-weight: 600;
-   font-size: 40px;
-   color: linear-gradient(36.77deg, #14141E 17%, #585884 82.27%);
-   line-height: 48px;
-}
-.placed-text p{
-   font-family: 'Mona Sans', sans-serif;
-   font-weight: 400;
-   font-size: 20px;
-   line-height: 28px;
-   color:  #A3A7B6;
-} */
-
-
-/* Base Styles */
 .placement-container {
    width: 100%;
    height: 777px;
@@ -97,9 +49,6 @@
    color: #A3A7B6;
  }
  
- /* Responsive Design */
- 
- /* For smaller desktops and tablets */
  @media (max-width: 1024px) {
    .placement-section {
      width: 90%;
@@ -125,7 +74,7 @@
    }
  }
  
- /* For tablets in portrait mode */
+
  @media (max-width: 768px) {
    .placement-section {
      flex-direction: column;
@@ -155,7 +104,7 @@
    }
  }
  
- /* For mobile devices */
+
  @media (max-width: 480px) {
    .placement-container {
      height: auto;
