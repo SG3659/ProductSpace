@@ -34,10 +34,4 @@ const institute = () => {
 export default institute;
 
 
-// width: Fill (985.9px)px;
-// height: Hug (130px)px;
-// max-width: var(--width1120);
-// padding: 40px 0px 40px 0px;
-// gap: 36px;
-// opacity: 0px;
 

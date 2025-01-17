@@ -1,175 +1,242 @@
-  :root {
-   --primary-bg-color: #000000;
-   --secondary-bg-color: #081228;
-   --highlight-color: #21C1F3;
-   --footer-text-color: #FFFFFF;
-   --subscribe-bg-color: #242424;
-   --button-bg-color: #242424;
-   --icon1-bg-color: #ff6600;
-   --icon2-bg-color: #2867B2;
-   --heading-font-size: 184px;
-   --heading-line-height: 224.3px;
-   --subscribe-bg-color: #242424;
-   --icon1-bg-color: #ff6600;
-   --icon2-bg-color: #2867B2;
- }
- 
- .footer{
+ :root {
+  --primary-bg-color: #000000;
+  --secondary-bg-color: #081228;
+  --highlight-color: #21C1F3;
+  --footer-text-color: #FFFFFF;
+  --subscribe-bg-color: #242424;
+}
+
+.footer {
   background: linear-gradient(180deg, #000000 0%, #081228 100%);
   width: 100%;
   height: 541px;
-  padding: 1px;
+  padding: 40px 20px;
   overflow: hidden;
- }
+}
 
- .footer-content{
-  width: 1113px;
-  height: 137px;
-  margin-top: 72px;
-  margin-left: 89px;
-  padding: 1px;
-  display:  flex;
+.footer-content {
+  width: 100%;
+  max-width: 1113px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
   justify-content: space-between;
- }
- .brand-section{
-  height: 137px;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.brand-section {
   width: 215px;
-  padding: 1px;
-  gap: 13px;
- }
- .brand-section h1{
-  color: var(--footer-text-color);
+}
 
- }
- .logo-span{
+.brand-section h1 {
+  color: var(--footer-text-color);
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.logo-span {
   color: #21C1F3;
- }
- .brand-section h2{
+}
+
+.brand-section h2 {
   margin-top: 16px;
-  font-weight: 600; 
+  font-weight: 600;
   font-size: 23.5px;
-  line-height: 14.4px;
   color: var(--footer-text-color);
-  font-family: 'Montserrat', sans-serif;
- }
- .brand-section p{
-  font-weight: 400;
-  font-size: 16px;
-  font-family: 'Montserrat', sans-serif;
-  color: var(--footer-text-color);
-  margin-top: 16px;
- }
- 
+}
 
-.footer-links{
-  width: 426px;
-  padding: 1px;
+.brand-section p {
+  margin-top: 8px;
+  font-size: 16px;
+  color: var(--footer-text-color);
+  opacity: 0.8;
+}
+
+.footer-links {
   display: flex;
-  gap: 9px;
+  gap: 60px;
 }
 
-.footer-column p{
+.footer-column p {
   color: var(--footer-text-color);
-  font-family: 'Inter', sans-serif;
-  font-weight: 700;
+  font-weight: 600;
   font-size: 16px;
-  line-height: 14.4px;
-}
-.footer-column li{
-  margin-top: 10px;
-  color: var(--footer-text-color);
-  opacity: 60%;
-  font-weight: 400;
-  font-size: 16px;
+  margin-bottom: 16px;
 }
 
-.footer-text-container{
-  margin-top: 30px;
-  margin-left: 89px;
+.footer-column li {
+  color: var(--footer-text-color);
+  opacity: 0.6;
+  margin-bottom: 12px;
+  font-size: 14px;
+}
+
+.footer-text-container {
+  width: 100%;
+  max-width: 1113px;
+  margin: 40px auto;
+  padding: 0 20px;
   display: flex;
+  justify-content: space-between;
+  align-items: center;
   flex-wrap: wrap;
-  padding: 0.2px;
-  gap: 350px;
+  gap: 300px;
 }
 
-.footer-text-section p{
-  padding: 1px;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 15px;
-  font-weight: 700;
-  line-height: 14.4px;
+.footer-text-section p {
   color: var(--footer-text-color);
+  font-weight: 500;
 }
+
 .footer-subscribe {
-  width:580px;
-  height: 48px;
-  gap: 12px;
   display: flex;
+  gap: 12px;
+  align-items: center;
   flex-wrap: wrap;
-  padding: 0.2px;
 }
 
-.subscribe-form{
-  width: 458px;
-  height: 48px;
-  padding: 0.2px;
+.footer-subscribe-form {
+  display: flex;
 }
+
 .subscribe-input {
-  height: 48px;
-  width: 336.2px;
-  padding: 0.2px;
-  background-color: var(--subscribe-bg-color);
+  background: var(--subscribe-bg-color);
   border: none;
-  border-radius: 4px 0 0 4px;
+  padding: 12px 16px;
   color: white;
-  font-size: 16px;
+  border-radius:4px 0px 0px 4px;
+  min-width: 200px;
 }
 
-.subscribe-input::placeholder {
-  color: rgba(255, 255, 255, 0.6);
-}
-
- .subscribe-button {
-  height: 48px;
-  padding: 0 16px;
-  background-color: var(--button-bg-color);
+.subscribe-button {
+  background: var(--subscribe-bg-color);
   color: white;
+  padding: 12px 24px;
   border: none;
-  border-radius: 0 4px 4px 0;
-  font-size: 16px;
+  border-radius: 0px 4px 4px 0px;
   cursor: pointer;
-  transition: background-color 0.2s;
-}
-
-.subscribe-button:hover {
-  background-color: #2a2a2a;
+  white-space: nowrap;
 }
 
 .icon-common {
-  width: 48px;
-  height: 48px;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
   cursor: pointer;
-  transition: transform 0.2s;
 }
 
-.icon-common:hover {
-  transform: scale(1.05);
-}
-.icon1{
-  background-color: var(--icon1-bg-color);
-}
-.icon2{
-  background-color: var(--icon2-bg-color);
+.icon1 {
+  background: #ff6600;
 }
 
-.footer-heading h1{
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 700;
-  font-size: 184px;
+.icon2 {
+  background: #2867B2;
+}
+
+.footer-heading {
+  text-align: center;
+  margin-top: 90px;
   opacity: 30%;
-  line-height: 224.3px;
-  margin-top: 65px;
-  margin-left: 16px;
+}
+
+.footer-heading h1 {
   color: #A4A4A4;
- }
+  font-size: 184px;
+  font-weight: bold;
+  opacity: 0.3;
+  line-height: 1;
+}
+
+@media (max-width: 480px) {
+  .footer {
+    padding: 40px 20px;
+  }
+
+  .footer-content {
+    padding: 0;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 40px;
+  }
+
+  .brand-section {
+    width: 100%;
+  }
+
+  .brand-section h1 {
+    font-size: 24px;
+  }
+
+  .brand-section h2 {
+    font-size: 20px;
+  }
+
+  .brand-section p {
+    font-size: 14px;
+  }
+
+  .footer-links {
+    width: 100%;
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  .footer-column p {
+    font-size: 14px;
+    margin-bottom: 12px;
+  }
+
+  .footer-column li {
+    font-size: 13px;
+    margin-bottom: 8px;
+  }
+
+  .footer-text-container {
+    margin: 32px 0;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+  }
+
+  .footer-text-section p {
+    font-size: 14px;
+  }
+
+  .footer-subscribe {
+    width: 100%;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 16px;
+  }
+
+  .footer-subscribe-form {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .subscribe-input {
+    width: 100%;
+    padding: 14px;
+    font-size: 14px;
+  }
+
+  .subscribe-button {
+    width: 100%;
+    padding: 14px;
+    font-size: 14px;
+  }
+
+  .icon-common {
+    width: 36px;
+    height: 36px;
+  }
+
+  .footer-heading {
+    margin-top: 40px;
+  }
+
+  .footer-heading h1 {
+    font-size: 40px;
+  }
+}

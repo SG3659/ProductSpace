@@ -40,27 +40,3 @@
 
 
 
-
- /* @media (max-width: 768px) {
-   .trusted-heading h1 {
-     font-size: 24px;
-     line-height: 30px;
-   }
- 
-   .trusted-img {
-     gap: 16px;
-   }
- 
-   .img-section img {
-     max-width: 200px;
-   }
- }
-  
- @media (max-width: 480px) {
-  .container{
-    display: flex;
-    flex-direction:column;
-  }
- }
- 
-  */

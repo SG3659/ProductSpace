@@ -47,8 +47,3 @@ const navbar = () => {
 export default navbar
 
 
-// width: Hug (123.25px)px;
-// height: Hug (36px)px;
-// padding: 12px 15.25px 8px 16px;
-// gap: 0px;
-// opacity: 0px;

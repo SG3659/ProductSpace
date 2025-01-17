@@ -3,7 +3,7 @@ import mentors from"../../constants/mentor"
 import "./mentor.css"
 const mentor = () => {
   return (
-    <div className='container'>
+    <div className='mentor-container'>
       {/*heading*/}
       <div className='mentor-Heading'>
          <h1>Learn from the Best</h1>
