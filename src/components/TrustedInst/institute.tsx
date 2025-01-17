@@ -2,7 +2,7 @@ import"./institute.css"
 import  Inst from"../../constants/Instimgindex"
 const institute = () => {
   return (
-   <div className="container">
+   <div className="inst-container">
       <div className="trusted-section" >
          {/*left*/}
          
