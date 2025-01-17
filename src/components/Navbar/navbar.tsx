@@ -3,7 +3,7 @@ import nav from "../../constants/index"
 import "./navbar.css"
 // import { IoMdMenu } from "react-icons/io";
 
-const navbar = () => {
+const navbar: React.FC = () => {
   return (
     
     <nav className="navbar">

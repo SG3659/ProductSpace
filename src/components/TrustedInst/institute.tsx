@@ -1,6 +1,6 @@
 import"./institute.css"
 import  Inst from"../../constants/Instimgindex"
-const institute = () => {
+const institute : React.FC = () => {
   return (
    <div className="inst-container">
       <div className="trusted-section" >

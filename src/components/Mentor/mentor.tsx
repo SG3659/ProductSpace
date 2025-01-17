@@ -1,7 +1,7 @@
 import React from 'react'
 import mentors from"../../constants/mentor"
 import "./mentor.css"
-const mentor = () => {
+const mentor : React.FC = () => {
   return (
     <div className='mentor-container'>
       {/*heading*/}

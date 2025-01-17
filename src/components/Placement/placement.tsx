@@ -1,7 +1,7 @@
 import React from 'react'
 import "./placements.css"
 
-const placement = () => {
+const placement: React.FC = () =>{
   return (
     <div className='placements-container'> 
     {/*lest */}

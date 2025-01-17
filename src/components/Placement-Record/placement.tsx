@@ -1,7 +1,7 @@
 import React from 'react'
 import "./placement.css"
 import { Image } from '../../assets'
-const placement = () => {
+const placement : React.FC = () => {
   return (
     <div className='placement-container'>
       <div className='placement-section'>

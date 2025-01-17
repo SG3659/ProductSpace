@@ -1,6 +1,6 @@
 import React from 'react'
 
-const programs = () => {
+const programs : React.FC = () => {
   return (
    <div className="programs-container">
       <h2 className="programs-title">Programs We Offer</h2>

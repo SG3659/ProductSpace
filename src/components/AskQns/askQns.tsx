@@ -1,7 +1,7 @@
 import "./askQns.css"
 import faqs from "../../constants/faqindx"
 import { useState } from "react"
-const askQns = () => {
+const askQns: React.FC = () => {
    const [activeIndex, setActiveIndex] = useState(null);
    const toggleFAQ = (index) => {
       setActiveIndex(activeIndex === index ? null : index);

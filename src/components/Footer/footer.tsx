@@ -1,5 +1,5 @@
 import "./footer.css"
-const footer = () => {
+const footer : React.FC = () =>{
   return (
    <footer className="footer">
       <div className="footer-content">

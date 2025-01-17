@@ -1,7 +1,7 @@
 import {useState} from 'react'
 import './event.css'
 import {events, pastEvents} from "../../constants/event"
-const Event = () => {
+const Event : React.FC = () =>{
 
    const [currentIndex, setCurrentIndex] = useState(0);
    const itemsPerPage = 3;
