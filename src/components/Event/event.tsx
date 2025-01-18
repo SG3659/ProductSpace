@@ -1,7 +1,9 @@
 import {useState} from 'react'
 import './event.css'
-import {events, pastEvents} from "../../constants/event"
-const Event : React.FC = () =>{
+import {events} from "../../constants/event"
+import UpcEventCard from "../Cards/UpcEvents/upcEventCard"
+import PastEventCard from "../Cards/PastEvent/pastEventCard"
+const Event: React.FC = () =>{
 
    const [currentIndex, setCurrentIndex] = useState(0);
    const itemsPerPage = 3;
@@ -52,32 +54,13 @@ const Event : React.FC = () =>{
          </div>
 
          {/*card */}
-         <div className="card-container">
-           {displayedEvents.map((event) => (
-             <div className="events-card" key={event.id}>
-               <div className='card-section'>
-                 <img src={event.banner} alt={`${event.title} Banner`} className="card-banner" />
-                 <div className='event-info'>
-                   <div className="date-badge">
-                     <p>{event.date.month}&nbsp;{event.date.day}</p>
-                     <p className="events-time">{event.time}</p>
-                   </div>
-                   <button>🔗</button>
-                 </div>
-                 <div className="event-details">
-                   <p>{event.title}</p>
-                 </div>
-               </div>
-               <button className="register-button">Register</button>
-             </div>
-           ))}
-         </div>
+         <UpcEventCard displayedEvent={displayedEvents}/>
        </div>
      </div>
 
-     {/*past-event*/}
+  
      <div className='mCard-container'>
-       {/*heading*/}
+       {/*headi*/}
        <div className='heading'>
          <h1>Past Events</h1>
          <div className='change-btn'>
@@ -90,20 +73,7 @@ const Event : React.FC = () =>{
          </div>
        </div>
        {/*card */}
-       <div className="card-container">
-         {pastEvents.map((event) => (
-           <div className="events-card" key={event.id}>
-             <div className='card-section'>
-               <img src={event.banner} alt={`${event.title} Banner`} className="card-banner" />
-               <div className="last-event-details">
-                 <p>{event.title}</p>
-                 <p>{event.expire}</p>
-               </div>
-             </div>
-             <button className="register-button">Event Details</button>
-           </div>
-         ))}
-       </div>
+       <PastEventCard/>
      </div>
    </div>
  </div>
