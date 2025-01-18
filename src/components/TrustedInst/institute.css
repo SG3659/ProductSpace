@@ -1,42 +1,96 @@
-.inst-container{
+ .inst-container {
    width: 100%;
-   height: 155px;
+   min-height: 155px;
    display: flex;
-   padding-left: 60px;
+   padding: 20px 60px;
    justify-content: center;
    align-items: center;
    margin-top: 100px;
-}
-.trusted-section{
-   width: 1211px;
-   height: 130px;
+ }
+ 
+ .trusted-section {
+   width: 100%;
+   max-width: 1211px;
+   min-height: 130px;
    display: flex;
    align-items: center;
-   justify-content: center;
-   
-}
-.trusted-section h1{
-   width: 224.6px;
-   height: 68px;
-   font-family: 'Mona Sans', sans-serif;   font-weight: 700;
+   justify-content: space-between;
+   gap: 40px;
+ }
+ 
+ .trusted-section h1 {
+   font-family: 'Mona Sans', sans-serif;
+   font-weight: 700;
    font-size: 27px;
    line-height: 33.6px;
-}
-.img-section{
-  width: 985.9px;
-  height: 130px;
-  padding: 40px 0 40px 0px;
-  gap: 36px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.inst-img img{ 
-  width: 241.61px;
-  height: 50px;
-  object-fit: cover;
-}
+   color: #14141E;
+   max-width: 224.6px;
+ }
+ 
+ .img-section {
+   width: 985.9px;
+   height: 50px;
+   display: flex;
+   align-items: center;
+   justify-content: space-evenly;
+ }
+ 
+ .inst-img {
+ 
+   display: flex;
+   align-items: center;
+   gap: 36px;
+   flex-wrap: wrap;
+   justify-content: center;
+ }
+ 
+ .institute-logo {
+   width: 241.61px;
+   height: 50px;
+   object-fit: cover;
+ }
 
-
-
-
+ @media (max-width: 480px) {
+   .inst-container {
+     padding: 16px;
+     margin-top: 50px;
+     min-height: auto;
+   }
+ 
+   .trusted-section {
+     flex-direction: column;
+     gap: 1px;
+     padding: 20px 0;
+   }
+ 
+   .trusted-section h1 {
+     font-size: 20px;
+     line-height: 28px;
+     text-align: center;
+     max-width: 100%;
+   }
+ 
+   .img-section {
+     width: 336px;
+     height: 113px;
+     display: flex;
+   }
+ 
+   .inst-img {
+     width: 336px;
+     height: 50px;
+     gap: 20px;
+     display: flex;
+     flex-direction: column;
+     overflow-x: auto;
+     scrollbar-width: none;
+     -ms-overflow-style: none;
+   }
+ 
+   .institute-logo {
+     width: 100%;
+     max-width: 200px;
+     height: 40px;
+     object-fit: cover;
+   }
+ }

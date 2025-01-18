@@ -14,6 +14,7 @@ const institute : React.FC = () => {
               <div className="inst-img">
               {Inst.map((img,index)=>(
                   <img
+                  className="institute-logo"
                   key={index} 
                   src={img.icon} alt="Institute"/>
                ))}
