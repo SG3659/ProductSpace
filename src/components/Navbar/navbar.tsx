@@ -1,7 +1,7 @@
 import { NavLink, Link } from "react-router-dom"
 import nav from "../../constants/index"
 import "./navbar.css"
-// import { IoMdMenu } from "react-icons/io";
+import { IoMdMenu } from "react-icons/io";
 
 const navbar: React.FC = () => {
   return (
@@ -9,6 +9,8 @@ const navbar: React.FC = () => {
     <nav className="navbar">
         <div className="navbar-container">
                 <h1 className="nav-head">Product <span className="head-span">Space</span></h1>
+                 <IoMdMenu className="menu-icon"/>
+                
                 <ul className="menu-bar">
                     {nav.map((menu)=>(
                         <li key={menu.id}
@@ -22,6 +24,7 @@ const navbar: React.FC = () => {
                         </li>
                     ))}
                 </ul>
+                
         
 
             <div className="button">

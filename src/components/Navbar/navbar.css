@@ -37,9 +37,13 @@
 .head-span {
   color: var(--color-primary);
 }
+.menu-icon{
+  display: none;
+  font-size: 24px;
+}
 
 .menu-bar {
-  display: none;
+  display: flex;
   gap: 48px;
 }
 
@@ -58,12 +62,13 @@
 }
 
 .button {
-  display: none;
   gap: 16px;
+  display: flex;
   justify-content: right;
 }
 
 .button-common {
+  width: 155px;
   font-weight: 500;
   border-radius: 62rem;
   font-size: 0.875rem;
@@ -96,27 +101,22 @@
   background-color: #1ba8d5;
 }
 
-/* Extracted Media Queries */
-@media (min-width: 1024px) {
-  .menu-bar {
-    display: flex;
-  }
-
-  .button {
-    display: flex;
-  }
-}
-
 @media (max-width: 480px) {
+  .navbar-container{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+  }
   .login-button {
     display: none;
   }
-
-  .nav-head {
-    display: none;
-  }
-
   .menu-bar {
     display: none;
+  }
+  .nav-head{
+    display: none;
+  }
+  .menu-icon{
+    display: inline;
   }
 }
