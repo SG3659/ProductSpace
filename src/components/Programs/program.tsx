@@ -24,13 +24,13 @@ const Programs: React.FC = () => {
                 ))}
              </ul>
 
-            {/* // <div className="pricing-section">
-             //   <p className="price-label">Course Pricing</p>
-             //   <p className="price-amount">
-             //     {program.price} <span>{program.priceSuffix}</span>
-             //   </p>
-             // </div>
-*/}
+             <div className="pricing-section">
+                <p className="price-label">Course Pricing</p>
+                <p className="price-amount">
+                  {program.price} <span>{program.priceSuffix}</span>
+                </p>
+              </div>
+
               <div className="card-actions">
                 <button className="enroll-btn btn-common">Enroll Now</button>
                 <button className="curriculum-btn btn-common">
